@@ -1,0 +1,152 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Agregando las nuevas fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+    color: #fff;
+    background: radial-gradient(circle, #5b1a5e 0%, #0c1c3c 100%);
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(30, 144, 255, 0.4); 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif; /* Mantenemos Montserrat para el logo */
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #c0c0c0;
+}
+
+/* --- ESTILOS DEL ARTÍCULO --- */
+.post-page {
+    padding: 20px 80px;
+    margin-top: 80px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0c1c3c;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.post-title {
+    /* Nueva fuente para el título principal */
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00c4ff;
+    margin-bottom: 20px;
+}
+
+.post-subtitle {
+    /* Nueva fuente para los subtítulos */
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.post-content p,
+.post-content li {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.important-quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #00c4ff;
+    border-left: 4px solid #00c4ff;
+    padding-left: 15px;
+    margin: 20px 0;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+}
+
+.post-content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.post-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.section-with-image {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-text-image {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .content-text-image {
+        flex-direction: column;
+    }
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #06142d;
+    font-size: 1rem;
+}
